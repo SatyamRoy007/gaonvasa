@@ -347,10 +347,9 @@ function App() {
             muted
             loop
             playsInline
-            poster="/background.mp4"
-          >
-            <source src="/background.mp4" type="video/mp4" />
-          </video>
+            preload="auto"
+            src={`${import.meta.env.BASE_URL}background.mp4`}
+          />
           <div className="absolute inset-0 bg-[#2b2117]/25" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,235,200,0.25),_transparent_60%)]" />
           <div className="relative z-10 flex h-full items-center px-5 sm:px-8 md:px-16 lg:px-24">
